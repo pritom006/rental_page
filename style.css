@@ -10,6 +10,7 @@
     --green: #00aa6c;
     --border-color: #e5e5e5;
     --text-gray: #666;
+    --dark-navy: #1B1B1B;
 }
 
 body {
@@ -89,6 +90,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.last-image {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .photo-count {
@@ -174,7 +181,7 @@ body {
 
 .rating-text {
     color: black;
-    margin-left: 0.25rem; /* Adjust the spacing as needed */
+    margin-left: 0.25rem; 
 }
 
 .rating a {
@@ -219,15 +226,7 @@ body {
 
 /* Booking Card */
 
-/* Fixed Booking Card Desing Issues */
-
-:root {
-    --primary-blue: #0052FF;
-    --border-color: #E5E7EB;
-    --text-gray: #6B7280;
-    --dark-navy: #1B1B1B;
-    --success-green: #008A05;
-  }
+/*  Booking Card Desing  */
 
   .booking-card {
     max-width: 380px;
@@ -250,16 +249,7 @@ body {
     gap: 12px;
   }
 
-  /* .member-banner .loading-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    border-top-color: transparent;
-    margin-right: 8px;
-    vertical-align: middle;
-  } */
+
 
   .sign-in-btn {
     background: var(--primary-blue);
@@ -416,128 +406,7 @@ body {
   }
 
 
-
-/* .booking-card {
-    background: white;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.5rem;
-    position: sticky;
-    top: 2rem;
-}
-
-.member-banner {
-    background: #1b1b1b;
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.member-banner button {
-    background: var(--primary-blue);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.price span {
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--text-gray);
-}
-
-.cancellation {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--green);
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-}
-
-.dates-container {
-    margin-bottom: 1rem;
-}
-
-.date-picker {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.date-input {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-.travelers-input {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.75rem;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.total {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.book-btn {
-    width: 100%;
-    padding: 1rem;
-    background: var(--primary-blue);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 1rem;
-}
-
-.no-charge {
-    text-align: center;
-    color: var(--text-gray);
-    font-size: 0.9rem;
-}
-
-.contact-host {
-    color: var(--primary-blue);
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-}
-
-.property-id {
-    text-align: center;
-    color: var(--text-gray);
-    font-size: 0.9rem;
-    margin-top: 1rem;
-} */
-
-
-
-/* Fixed map design issues */
+/*  map design  */
 
 .explore-container {
     font-family: system-ui, -apple-system, sans-serif;
@@ -659,99 +528,6 @@ body {
   }
 
 
-/* .explore-container {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    padding: 20px;
-}
-
-.explore-header {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.explore-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 20px;
-}
-
-.map-container {
-    background-color: #B2E6F0;
-    border-radius: 8px;
-    position: relative;
-    height: 150px;
-}
-
-.location-marker {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    width: 20px;
-    height: 20px;
-    background-color: #4169E1;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-.location-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #333;
-    font-size: 14px;
-}
-
-.view-map-link {
-    color: #0066cc;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.locations-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.location-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    font-size: 14px;
-}
-
-.location-icon {
-    margin-right: 10px;
-    color: #666;
-}
-
-.location-details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.drive-time {
-    color: #666;
-}
-
-.see-more {
-    color: #0066cc;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 10px;
-    display: block;
-} */
-
-/* .rooms-container {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    padding: 20px;
-    border-top: 1px solid #e0e0e0;
-    margin-top: 20px;
-} */
 
 .rooms-container {
     /* display: grid;
@@ -1073,7 +849,7 @@ body {
 }
 
 .question-box {
-    background-color: #f8fbff;
+    background-color: lightcyan;
     border-radius: 12px;
     padding: 24px;
     position: relative;
@@ -1164,88 +940,7 @@ body {
 }
 
 
-/* .house-rules {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 24px;
-    font-family: system-ui, -apple-system, sans-serif;
-}
-
-.rules-header {
-    margin-bottom: 32px;
-}
-
-.rules-header h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 16px;
-}
-
-.time-rules p {
-    color: #444;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 4px 0;
-}
-
-.rules-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-bottom: 32px;
-}
-
-.rule-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.rule-icon {
-    font-size: 20px;
-    min-width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #444;
-}
-
-.rule-content h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #222;
-    margin: 0 0 4px 0;
-}
-
-.rule-content p {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.damage-section {
-    border-top: 1px solid #eee;
-    padding-top: 24px;
-}
-
-.damage-section h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 16px;
-}
-
-.damage-section p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-    margin: 0;
-} */
-
-/* Fix the design for House rules */
+/* Design for House rules */
 /* Rules Section */
 
 .house-damage-container {
@@ -1304,11 +999,7 @@ body {
     font-size: 14px;
 }
 
-/* Damage Info */
-.damage-info {
-    border-top: 1px solid #eee;
-    padding-top: 24px;
-}
+
 
 .damage-item {
     display: flex;
@@ -1364,7 +1055,7 @@ body {
     position: relative;
     height: 2px;
     background: #ddd;
-    margin: 1rem 0 2rem;
+    margin: 1rem 1rem 2rem;
 }
 
 .timeline-progress {
@@ -1380,7 +1071,7 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: -2rem;
 }
 
 .point {
@@ -1567,7 +1258,7 @@ body {
 .score {
     font-size: 32px;
     font-weight: 600;
-    color: #222;
+    color: green;
     margin-bottom: 4px;
 }
 
@@ -1595,17 +1286,22 @@ body {
     margin-bottom: 24px;
 }
 
-.reviews-grid {
+/* Carousel Styles */
+.reviews-carousel {
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.reviews-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin-bottom: 24px;
 }
 
 .review-card {
     background: #fff;
-    border-radius: 12px;
     border: 1px solid #ddd;
+    border-radius: 12px;
     padding: 24px;
 }
 
@@ -1655,21 +1351,19 @@ body {
 .see-all-reviews {
     display: inline-flex;
     align-items: center;
-    color: #006aff;
-    text-decoration: none;
-    font-size: 14px;
+    gap: 8px;
     padding: 8px 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    color: #006aff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .see-all-reviews:hover {
     background: #f7f7f7;
 }
 
-.arrow-icon {
-    margin-left: 8px;
-}
 
 /* host section design */
 
@@ -1708,14 +1402,14 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     color: #1a1a1a;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   .host-name {
     display: flex;
     align-items: center;
-    font-size: 1rem;
-    color: #4b5563;
+    font-size: 1.5rem;
+    color: #101111;
   }
 
   .languages-section {
@@ -1723,8 +1417,8 @@ body {
   }
 
   .languages-title {
-    font-size: 1rem;
-    color: #4b5563;
+    font-size: 1.5rem;
+    color: #101111;
     margin-bottom: 0.5rem;
   }
 
@@ -1744,24 +1438,22 @@ body {
     margin-right: 0.25rem;
   }
 
-  .contact-host {
+  .contact-host-u {
     display: block;
-    background: #fff;
+    background: #f1ebeb;
     color: blue;
-    padding: 0.75rem 5.9rem;
+    padding: 0.75rem 1rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
-    text-align: center;
+    text-align: justify;
     transition: background-color 0.2s;
     margin-top: auto;
   }
 
   .contact-host:hover {
-    background: #1d4ed8;
+    background: #ecedf0;
   }
-
-
 
 
 
@@ -1779,6 +1471,11 @@ body {
 
     .gallery-grid {
         grid-template-rows: repeat(2, 150px);
+    }
+
+    .last-image {
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .content-container {
@@ -1802,6 +1499,7 @@ body {
     .tabs {
         padding: 1rem;
         overflow-x: auto;
+        margin-top: 6.5rem;
     }
 }
 /* Location responsiveness */
@@ -1984,35 +1682,9 @@ body {
         font-size: 16px;
     }
 }
-/* @media (max-width: 640px) {
-    .rules-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .house-rules {
-        padding: 16px;
-    }
-
-    .rules-header h2,
-    .damage-section h2 {
-        font-size: 20px;
-    }
-} */
-
-/* Optional: Add hover effects */
-/* .rule-item:hover {
-    transform: translateY(-1px);
-    transition: transform 0.2s ease;
-}
-
-.rule-item:hover .rule-icon {
-    transform: scale(1.1);
-    transition: transform 0.2s ease;
-} */
 
 
- /* Responsive Design for cancelation*/
+ 
  @media (max-width: 744px) {
     .cancellation-section {
         flex-direction: column;
@@ -2058,10 +1730,46 @@ body {
 }
 
 /* responsive design for review section */
-@media (max-width: 744px) {
+@media (max-width: 1024px) {
     .reviews-section {
         flex-direction: column;
         gap: 24px;
+    }
+
+    .reviews-score {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .score-label, .review-count {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .reviews-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-review-container {
+        padding: 0 16px;
+    }
+
+    /* .reviews-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .review-card {
+        min-width: 100%;
+    }
+    
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
     }
 
     .reviews-score {
@@ -2070,8 +1778,10 @@ body {
 
     .reviews-grid {
         grid-template-columns: 1fr;
-    }
+    } */
 }
+
+
 
 /* Responsive Design for Host */
 @media (max-width: 768px) {
